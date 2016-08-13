@@ -2,7 +2,6 @@
         $conn =  mysql_connect('localhost','root','root') or die("cannot connect");
         mysql_select_db("radius_app");
         $number = $_POST['user_contact'];
-
         $otp =  rand(10000, 99999);
         $sql="SELECT * FROM register_users WHERE user_contact='$number'";
         $check=mysql_query($sql);
