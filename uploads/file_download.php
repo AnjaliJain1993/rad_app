@@ -1,5 +1,7 @@
 <?php
-$file =$_GET['filename'];;
+$list = glob('pic*.png');
+$file = $list[0];
+//$_GET['filename'];;
 
 if (file_exists($file)) {
     header('Content-Description: File Transfer');
