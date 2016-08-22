@@ -1,6 +1,6 @@
 <?php
 $list = glob('pic*.png');
-$file = $list[0];
+$file = $list[1];
 //$_GET['filename'];;
 
 if (file_exists($file)) {
